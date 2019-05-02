@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    android:animateLayoutChanges="true"
+    android:id="@+id/new_contact_layout"
+    android:background="@color/colorBackground">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="25dp"
+        android:layout_marginTop="125dp"
+        android:textColorHint="@android:color/black"
+        app:hintTextAppearance="@style/Base.Widget.MaterialComponents.TextInputLayout.HintText" >
+
+        <android.support.design.widget.TextInputEditText
+            android:maxLines="1"
+            android:id="@+id/contact_add_name"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Name" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp"
+        android:textColorHint="@android:color/black"
+        app:hintTextAppearance="@style/Base.Widget.MaterialComponents.TextInputLayout.HintText" >
+
+        <android.support.design.widget.TextInputEditText
+            android:maxLines="1"
+            android:id="@+id/contact_add_phone_number"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Phone number" />
+
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>

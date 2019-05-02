@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    android:animateLayoutChanges="true"
+    android:id="@+id/new_appointment_layout"
+    android:background="@color/colorBackground">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@android:color/black"
+        app:hintTextAppearance="@style/Base.Widget.MaterialComponents.TextInputLayout.HintText" >
+
+        <android.support.design.widget.TextInputEditText
+            android:maxLines="1"
+            android:id="@+id/appointment_add_name"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Name" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="@android:color/black"
+        app:hintTextAppearance="@style/Base.Widget.MaterialComponents.TextInputLayout.HintText" >
+
+        <android.support.design.widget.TextInputEditText
+            android:maxLines="1"
+            android:id="@+id/appointment_add_location"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:focusable="false"
+            android:hint="Location"
+            android:text="Choose location"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@android:color/black"
+        app:hintTextAppearance="@style/Base.Widget.MaterialComponents.TextInputLayout.HintText" >
+
+        <android.support.design.widget.TextInputEditText
+            android:maxLines="1"
+            android:id="@+id/appointment_add_date"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:focusable="false"
+            android:longClickable="false"
+            android:hint="Date" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@android:color/black"
+        app:hintTextAppearance="@style/Base.Widget.MaterialComponents.TextInputLayout.HintText" >
+
+        <android.support.design.widget.TextInputEditText
+            android:maxLines="1"
+            android:id="@+id/appointment_add_time"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:focusable="false"
+            android:longClickable="false"
+            android:hint="Time" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@android:color/black"
+        app:hintTextAppearance="@style/Base.Widget.MaterialComponents.TextInputLayout.HintText" >
+
+        <android.support.design.widget.TextInputEditText
+            android:maxLines="1"
+            android:lines="1"
+            android:inputType="text"
+            android:focusable="false"
+            android:longClickable="false"
+            android:id="@+id/appointment_add_attendees"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Choose contacts" />
+
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Notifications">
+
+        <CheckBoxPreference
+            android:key="checkbox_notifications"
+            android:title="Enable notifications"
+            android:defaultValue="true"/>
+
+        <EditTextPreference
+            android:key="notification_time"
+            android:title="Enable notifications"
+            android:dialogTitle="Format: 00:00"
+            android:dependency="checkbox_notifications" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="SMS reminder">
+
+        <CheckBoxPreference
+            android:key="checkbox_sms"
+            android:title="Send SMS reminders to contacts"
+            android:defaultValue="true"/>
+
+        <EditTextPreference
+            android:key="sms_content"
+            android:title="Set SMS message content"
+            android:dialogTitle="SMS message content"
+            android:dependency="checkbox_sms" />
+
+        <EditTextPreference
+            android:key="sms_time"
+            android:title="Set SMS sending time"
+            android:dialogTitle="Format: 00:00"
+            android:dependency="checkbox_sms" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

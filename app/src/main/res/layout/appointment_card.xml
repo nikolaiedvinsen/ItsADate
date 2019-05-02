@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/appointment_card_view"
+    android:paddingBottom="1dp"
+    card_view:cardCornerRadius="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true">
+
+        <TextView
+            android:id="@+id/appointment_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Appointment"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/appointment_location_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/appointment_name"
+            android:layout_marginLeft="10dp"
+            android:text="Ragnars Restaurant" />
+
+        <TextView
+            android:id="@+id/appointment_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/appointment_name"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/appointment_location_name"
+            android:width="20dp"
+            android:text="•"
+            android:textAlignment="center"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/appointment_location_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/appointment_name"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/appointment_dot"
+            android:text="Restaurant"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/appointment_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/appointment_name"
+            android:text="01.01.2018"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/appointment_location_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/appointment_location_name"
+            android:layout_marginLeft="10dp"
+            android:text="Ragnarveien 8"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/appointment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/appointment_date"
+            android:text="00:00"
+            android:layout_marginRight="10dp"
+            android:textSize="15sp"
+            android:visibility="visible" />
+
+        <View
+            android:id="@+id/appointment_separator_line"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/appointment_time"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/darker_gray" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

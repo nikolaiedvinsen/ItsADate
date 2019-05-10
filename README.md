@@ -1,6 +1,8 @@
 # ItsADate
 A simple event planner that helps you manage appointments, contacts and locations.
 
+You can add contacts and locations, and then schedule appointments with your selected contacts at the selected location.
+
 Appointments (default screen)
 
 ![appointments](https://i.postimg.cc/N04x5Rf6/Screenshot-1556802909.png)
